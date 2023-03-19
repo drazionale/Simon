@@ -1,0 +1,12 @@
+for n=1:10
+    sequence = randi(4,1,n)
+    for i=1:n
+        if sequence(i)==1
+            %% lite up red
+        elseif sequence(i)==2
+            %%lite up green
+        elseif seqeunce (i)==3
+            %%lite up yellow
+        elseif seqence (i)==4
+            %%lite up blue
+end
