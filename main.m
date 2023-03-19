@@ -412,29 +412,31 @@ E(400:600,400:600,3)=0;
 
 %%%%%%%%%%%%%%%%
 
-for n=1:10
-    sequence = randi(4,1,n)
-    for i=1:n
-        if sequence(i)==1
-            subplot (5,2,i)
+sequence = []
+    for i=1:10
+        A = randi(4);
+        sequence=[sequence, A]
+        for n=1:i
+        if sequence(n)==1
+            subplot (5,2,n)
             imagesc(B)
             axis image;
             axis off;
         elseif sequence(i)==2
-            subplot (5,2,i)
+            subplot (5,2,n)
             imagesc(C)
             axis image;
             axis off;
         elseif sequence(i)==3
-            subplot (5,2,i)
+            subplot (5,2,n)
             imagesc(D)
             axis image;
             axis off;
         elseif sequence(i)==4
-            subplot (5,2,i)
+            subplot (5,2,n)
             imagesc(E)
             axis image;
             axis off;
         end
+        end
     end
-end
