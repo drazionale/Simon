@@ -411,6 +411,7 @@ E(400:600,400:600,3)=0;
 
 
 %%%%%%%%%%%%%%%%
+user_sequence=[]
 
 sequence = []
     for i=1:10
@@ -438,5 +439,12 @@ sequence = []
             axis image;
             axis off;
         end
+        
+        if isequal(user_sequence,sequence(1:i))==1
+        continue
+        else
+            break
+        
+        
         end
     end
