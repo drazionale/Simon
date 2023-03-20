@@ -47,5 +47,5 @@ end
 %%%prints "simon" in the center of the game board
 text="simon";
 position= [125 125];
-simon_board= insertText(simon_board,position,text,anchorpoint="Center",Boxcolor="black",textcolor="white");
+%%simon_board= insertText(simon_board,position,text,anchorpoint="Center",Boxcolor="black",textcolor="white");
 imagesc(simon_board)
